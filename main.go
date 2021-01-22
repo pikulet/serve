@@ -56,6 +56,7 @@ func getKuuteIndex(c *gin.Context) {
 
 func getKuuteBadge(c *gin.Context) {
     name := c.Param("name")
+    fmt.Println(name)
     badge := kuute.GetCounterBadge(name)
 
     // to block caching
