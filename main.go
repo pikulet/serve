@@ -4,6 +4,7 @@ import (
     "fmt"
     "net/http"
     "github.com/gin-gonic/gin"
+    "github.com/gin-contrib/cors"
     "time"
     "crypto/md5"
 
@@ -32,6 +33,10 @@ func main() {
         kuuteRoutes.GET("/", getKuuteIndex) 
         kuuteRoutes.GET("/:name", getKuuteBadge)
     }
+
+    config := cors.DefaultConfig()
+    config.AllowOrigins = []string{ "https://pikulet.herokuapp.com" }
+    r.Use(cors.New(config))
 
     r.Run()
 }

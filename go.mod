@@ -4,6 +4,7 @@ module github.com/pikulet/serve
 go 1.15
 
 require (
+	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-pg/pg/v10 v10.7.4 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
