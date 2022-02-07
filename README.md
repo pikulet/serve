@@ -8,5 +8,3 @@ the free hosting limits.
 `/ghost` - ghost wordpack
 
 `/kuute` - kuute view counter
-
-`/fillr` - fillr API
